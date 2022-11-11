@@ -1,3 +1,5 @@
+import java.util.HashSet;
+import java.util.Set;
 
 public class Main {
 
@@ -11,9 +13,16 @@ public class Main {
 
     public static void main(String[] args) {
 
+//        System.out.println(howManyLetters.contains("Lorem ipsum"));
+//        System.out.println(howManyLetters.contains("Hello World"));
 
-        System.out.println(howManyLetters.contains("Lorem ipsum"));
-        System.out.println(howManyLetters.contains("Hello World"));
-        System.out.println(WordsChecker.class);
+        WordsChecker text = new WordsChecker(howManyLetters);
+
+        String word = "Lorem ipsum";
+        System.out.println("в тексте есть фраза - " + word + " - " + text.hasWord(word));
+        String word1 = "Hello World";
+        System.out.println("в тексте есть фраза - " + word1 + " - " + text.hasWord(word1));
+
+
     }
 }

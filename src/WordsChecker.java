@@ -13,4 +13,8 @@ public class WordsChecker {
 
         Collections.addAll(set, text.split("\\P{IsAlphabetic}+"));
     }
+
+    public boolean hasWord(String word) {
+        return text.contains(word);
+    }
 }
